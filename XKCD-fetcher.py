@@ -3,7 +3,7 @@ import time, re, os
 
 
 def xkcd_fetcher():
-    print("Fetching XKCD...\n")
+    print("\nFetching XKCD...\n")
     webpage = urllib.request.urlopen("http://c.xkcd.com/random/comic/")
     webpage_text = str(webpage.read())
     expression = "for hotlinking/embedding\): http://imgs.xkcd.com/comics/.+\.png"
